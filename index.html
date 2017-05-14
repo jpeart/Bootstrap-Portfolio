@@ -4,9 +4,31 @@
 <head>
     <title>bs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <div class="container">
-        <nav class="navbar  mt-2 border-top-5"> <span class="navbar-text"> Navbar text with an inline element </span></nav>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <!-- Fluid resizes to screen -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1 class="navbar-brand"> Navbar </h1>
+                <!-- This creates the collapsed navbar links into a button -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" datatarget="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle Nav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        <!-- These are the links that will populate the navbar, collapsed or otherwise -->
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.6px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href=""> Link1 </a></li>
+                <li> <a href=""> Link2 </a></li>
+                <li> <a href=""> Link3 </a></li>
+            </ul>
+        </div>
+
     </div>
+</nav>
 </head>
 
 <body>
@@ -91,6 +113,10 @@
             </div>
             <!-- END FIRST ROW -->
         </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
